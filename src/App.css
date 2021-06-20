@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: #00305B;
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: 1.7px;
   color: white;
+  -webkit-user-select: none;
 }
 
-.App-link {
-  color: #61dafb;
+.app {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.endGame::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding-left: 2px;
+  background-color: #F5F5F5;
+}
+
+.endGame::-webkit-scrollbar {
+  width: 6px;
+  background-color: white;
+}
+
+.endGame::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+  background-color: rgb(95, 95, 95);
+}
+
+.results {
+  position: absolute;
+  left: 38%;
+  top: 40%;
+  background-color: white;
+  color: black;
+  width: 300px;
+  justify-content: center;
+  max-height: auto;
+  padding-bottom: 13px;
+  max-width: 300px;
+}
+
+.no-results {
+ width: 0%;
+ height: 0%;
+}
+
+.square {
+  
+}
+
+.endGame {
+  left: 25%;
+  position: relative;
+  margin-top: 10px;
+  max-height: 200px;
+  width: 95px;
+  max-width: 115px;
+  overflow-y: auto;
+}
+
+.average {
+  position:relative;
+  left: 10%;
+  padding-top: 10px;
+}
+
+.button {
+  position: absolute;
+  top: 35%;
+  left: 44.4%;
+  font-family: 'Russo One', sans-serif;
+  border-radius: 0%;
+  border-color: transparent;
+  background-color: orange;
+  letter-spacing: 1.7px;
+  color: black;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.button:hover {
+  border-color:rgb(240, 190, 98);
+  background-color: rgb(255, 145, 0) ;
+  border-right-color: orange;
+  border-bottom-color: rgb(206, 134, 0);
+}
+
+.button:disabled,
+.button[disabled]{
+    background: transparent;
+    border: none !important;
+    font-size:0;
 }
